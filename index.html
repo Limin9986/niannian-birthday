@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>念念 7 岁生日派对 🎀👑</title>
+<meta name="description" content="念念 7 岁生日派对活动方案：套圈、投壶、扔沙袋、揪尾巴、气球接力、园区寻宝、博饼、天黑请闭眼、公主请许愿，攒游戏币博饼抽大奖。" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="theme-color" content="#FF9EC4" />
+<meta property="og:title" content="念念 7 岁生日派对 🎀" />
+<meta property="og:description" content="闯关攒游戏币 → 博饼抽大奖！10/31 周六 14:30，万科城市之光南区见～" />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎀</text></svg>" />
+<style>
+  :root{
+    --pink:#FF9EC4;
+    --pink-soft:#FFD9EA;
+    --pink-deep:#F26DA1;
+    --lav:#C8A2E8;
+    --lav-soft:#EADCFB;
+    --gold:#F6C453;
+    --gold-soft:#FFF3D6;
+    --mint:#A8E6CF;
+    --cream:#FFF8F0;
+    --ink:#7A5563;
+    --ink-soft:#A88B97;
+    --card:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Heiti SC',sans-serif;
+    background:
+      radial-gradient(circle at 12% 8%, #FFE3F1 0, transparent 38%),
+      radial-gradient(circle at 88% 4%, #E9DBFF 0, transparent 40%),
+      linear-gradient(180deg,#FFF5FB 0%, #F7EEFF 100%);
+    color:var(--ink);
+    line-height:1.75;
+    min-height:100vh;
+    padding-bottom:70px;
+  }
+
+  /* ===== Hero ===== */
+  .hero{
+    text-align:center;
+    padding:54px 20px 26px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero .crown{font-size:2.6rem;filter:drop-shadow(0 4px 6px rgba(246,196,83,.5));}
+  .hero h1{
+    font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Heiti SC',sans-serif;
+    font-size:clamp(2rem,7vw,3rem);
+    color:var(--pink-deep);
+    letter-spacing:1px;
+    text-shadow:2px 2px 0 #fff, 5px 5px 0 var(--pink-soft);
+    margin:6px 0 4px;
+  }
+  .hero .sub{
+    display:inline-block;
+    background:linear-gradient(135deg,var(--pink),var(--lav));
+    color:#fff;
+    font-weight:700;
+    padding:8px 22px;
+    border-radius:999px;
+    box-shadow:0 8px 18px rgba(242,109,161,.35);
+    font-size:1rem;
+    margin-top:10px;
+  }
+  .float{position:absolute;opacity:.8;animation:float 5s ease-in-out infinite;pointer-events:none;}
+  .float.f1{top:18px;left:8%;font-size:1.6rem;animation-delay:.2s;}
+  .float.f2{top:60px;right:10%;font-size:1.3rem;animation-delay:1.1s;}
+  .float.f3{top:120px;left:18%;font-size:1.1rem;animation-delay:2s;}
+  .float.f4{top:30px;right:22%;font-size:1.4rem;animation-delay:1.6s;}
+  @keyframes float{0%,100%{transform:translateY(0) rotate(-4deg);}50%{transform:translateY(-12px) rotate(4deg);}}
+
+  /* ===== Info grid ===== */
+  .info-wrap{max-width:920px;margin:0 auto;padding:0 20px;}
+  .rule-banner{
+    background:linear-gradient(135deg,#FFF6E0,#FFE9F3);
+    border:2px dashed var(--gold);
+    border-radius:22px;
+    padding:16px 20px;
+    text-align:center;
+    margin:8px auto 26px;
+    font-weight:500;
+    color:#B5651D;
+    box-shadow:0 8px 20px rgba(246,196,83,.18);
+  }
+  .rule-banner b{color:var(--pink-deep);}
+  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;}
+  .info-card{
+    background:var(--card);
+    border-radius:20px;
+    padding:16px 14px;
+    text-align:center;
+    box-shadow:0 6px 18px rgba(200,162,232,.15);
+    border:2px solid #fff;
+  }
+  .info-card .ic{font-size:1.5rem;}
+  .info-card .lab{font-size:.78rem;color:var(--ink-soft);margin-top:4px;}
+  .info-card .val{font-weight:700;color:var(--pink-deep);font-size:.98rem;margin-top:2px;}
+
+  /* ===== Timeline ===== */
+  .section-title{
+    text-align:center;
+    font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Heiti SC',sans-serif;
+    font-size:1.7rem;
+    color:var(--lav);
+    margin:46px 0 8px;
+    text-shadow:1px 1px 0 #fff;
+  }
+  .timeline{max-width:860px;margin:18px auto 0;padding:0 20px;position:relative;}
+  .activity{
+    background:var(--card);
+    border-radius:28px;
+    padding:22px 24px 24px;
+    margin-bottom:22px;
+    box-shadow:0 12px 30px rgba(200,162,232,.20);
+    position:relative;
+    border:3px solid #fff;
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .activity:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(242,109,161,.25);}
+  .activity::before{
+    content:'';
+    position:absolute;left:18px;top:0;bottom:0;width:0;
+  }
+  .time-badge{
+    display:inline-block;
+    background:linear-gradient(135deg,var(--pink),var(--lav));
+    color:#fff;font-weight:700;border-radius:999px;padding:6px 16px;font-size:.92rem;
+    box-shadow:0 4px 10px rgba(242,109,161,.30);
+  }
+  .activity-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:12px 0 4px;}
+  .activity-title{font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Heiti SC',sans-serif;font-size:1.45rem;color:var(--pink-deep);}
+  .tag{font-size:.76rem;background:var(--pink-soft);color:var(--pink-deep);border-radius:999px;padding:3px 12px;font-weight:500;}
+  .tag.lav{background:var(--lav-soft);color:#8E5BC4;}
+  .tag.gold{background:var(--gold-soft);color:#B5651D;}
+  .section-label{
+    font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Heiti SC',sans-serif;color:var(--lav);font-size:1.05rem;
+    margin:16px 0 6px;display:flex;align-items:center;gap:6px;
+  }
+  .play-list{list-style:none;padding-left:2px;}
+  .play-list li{position:relative;padding-left:28px;margin:7px 0;font-size:.97rem;}
+  .play-list li::before{content:'💖';position:absolute;left:0;top:1px;font-size:.92rem;}
+  .reward{
+    background:linear-gradient(135deg,#FFF6E0,#FFE9F3);
+    border-radius:16px;padding:12px 16px;margin-top:4px;
+    color:#C2185B;font-weight:500;font-size:.95rem;
+    border:1.5px dashed var(--gold);
+  }
+  .reward .coin{filter:drop-shadow(0 1px 1px rgba(0,0,0,.1));}
+  .items{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
+  .chip{
+    background:var(--cream);border:1.5px dashed var(--pink);color:var(--ink);
+    border-radius:999px;padding:5px 14px;font-size:.86rem;
+  }
+  .footer{
+    text-align:center;color:var(--ink-soft);font-size:.82rem;margin-top:40px;padding:0 20px;
+  }
+  .footer .heart{color:var(--pink-deep);}
+</style>
+</head>
+<body>
+
+  <header class="hero">
+    <span class="float f1">✨</span>
+    <span class="float f2">💕</span>
+    <span class="float f3">🌸</span>
+    <span class="float f4">⭐</span>
+    <div class="crown">👑</div>
+    <h1>念念 7 岁生日派对</h1>
+    <div class="sub">🎀 闯关攒游戏币 · 博饼抽大奖 🎀</div>
+  </header>
+
+  <div class="info-wrap">
+    <div class="rule-banner">
+      🪙 玩法核心：闯关攒「游戏币」→ 兑换博饼次数 → 博饼抽大奖　|　<b>1 游戏币 = 1 次博饼</b>，团队赛全员按名次发币，个人赛按表现发币
+    </div>
+    <div class="info-grid">
+      <div class="info-card"><div class="ic">🎂</div><div class="lab">主题</div><div class="val">念念 7 岁生日</div></div>
+      <div class="info-card"><div class="ic">📅</div><div class="lab">时间</div><div class="val">10/31 周六<br>14:30–21:00</div></div>
+      <div class="info-card"><div class="ic">📍</div><div class="lab">地点</div><div class="val">万科城市之光南区</div></div>
+      <div class="info-card"><div class="ic">👯</div><div class="lab">人数</div><div class="val">约 16 人<br>8 大 8 小</div></div>
+    </div>
+  </div>
+
+  <h2 class="section-title">🌈 活动行程与玩法总览</h2>
+  <div class="timeline">
+
+    <!-- 集合 -->
+    <div class="activity">
+      <span class="time-badge">14:30 – 15:00</span>
+      <div class="activity-head">
+        <span class="activity-title">🍬 集合热身</span>
+        <span class="tag">闲聊 / 全员</span>
+      </div>
+      <div class="section-label">🎈 玩法</div>
+      <ul class="play-list">
+        <li>随到随玩、自由吃点心，不赶仪式</li>
+      </ul>
+      <div class="section-label">🎒 物品清单</div>
+      <div class="items"><span class="chip">零食</span><span class="chip">饮料</span><span class="chip">点心</span></div>
+    </div>
+
+    <!-- 套圈 -->
+    <div class="activity">
+      <span class="time-badge">15:00 – 15:20</span>
+      <div class="activity-head">
+        <span class="activity-title">🎯 套圈</span>
+        <span class="tag">个人赛 / 全员</span>
+      </div>
+      <div class="section-label">🎈 玩法</div>
+      <ul class="play-list">
+        <li>每人 5 圈，现场布置 3 个套筒</li>
+        <li>近距套中 1 币、中距套中 2 币、远距套中 3 币</li>
+      </ul>
+      <div class="section-label">🪙 奖励</div>
+      <div class="reward"><span class="coin">🪙</span> 按套中距离累计游戏币</div>
+      <div class="section-label">🎒 物品清单</div>
+      <div class="items"><span class="chip">套圈 ×15</span><span class="chip">套筒 ×6</span></div>
+    </div>
+
+    <!-- 投壶 -->
+    <div class="activity">
+      <span class="time-badge">15:20 – 15:40</span>
+      <div class="activity-head">
+        <span class="activity-title">🏺 投壶</span>
+        <span class="tag">个人赛 / 全员</span>
+      </div>
+      <div class="section-label">🎈 玩法</div>
+      <ul class="play-list">
+        <li>每人 5 箭</li>
+        <li>根据投中壶口数量，奖励对应游戏币</li>
+      </ul>
+      <div class="section-label">🪙 奖励</div>
+      <div class="reward"><span class="coin">🪙</span> 投中壶口数量对应游戏币</div>
+      <div class="section-label">🎒 物品清单</div>
+      <div class="items"><span class="chip">投壶套装（壶 + 10 支箭）</span></div>
+    </div>
+
+    <!-- 扔沙袋 -->
+    <div class="activity">
+      <span class="time-badge">15:40 – 16:00</span>
+      <div class="activity-head">
+        <span class="activity-title">🎲 扔沙袋</span>
+        <span class="tag">个人赛 / 全员</span>
+      </div>
+      <div class="section-label">🎈 玩法</div>
+      <ul class="play-list">
+        <li>每人 5 袋</li>
+        <li>根据投中区域取最高分</li>
+        <li>环数 10 / 20 / 30 / 50 分别对应 1 / 2 / 3 / 5 币</li>
+      </ul>
+      <div class="section-label">🪙 奖励</div>
+      <div class="reward"><span class="coin">🪙</span> 命中环数对应 1~5 游戏币</div>
+      <div class="section-label">🎒 物品清单</div>
+      <div class="items"><span class="chip">投掷环形靶图</span><span class="chip">沙袋 ×5</span></div>
+    </div>
+
+    <!-- 揪尾巴 -->
+    <div class="activity">
+      <span class="time-badge">16:00 – 16:20</span>
+      <div class="activity-head">
+        <span class="activity-title">🦊 揪尾巴</span>
+        <span class="tag lav">团队赛 / 小孩</span>
+      </div>
+      <div class="section-label">🎈 玩法</div>
+      <ul class="play-list">
+        <li>两两组队手牵手，1–4 各自随机匹配 5–8</li>
+        <li>每人腰后别尾巴，尾巴被揪光则淘汰</li>
+        <li>获胜组 3 币/人，其余 1 币/人</li>
+      </ul>
+      <div class="section-label">🪙 奖励</div>
+      <div class="reward"><span class="coin">🪙</span> 获胜组 3 币/人，其余 1 币/人</div>
+      <div class="section-label">🎒 物品清单</div>
+      <div class="items"><span class="chip">尾巴道具</span></div>
+    </div>
+
+    <!-- 气球接力赛 -->
+    <div class="activity">
+      <span class="time-badge">16:20 – 16:50</span>
+      <div class="activity-head">
+        <span class="activity-title">🎈 气球接力赛</span>
+        <span class="tag lav">团队赛 / 全员</span>
+      </div>
+      <div class="section-label">🎈 玩法</div>
+      <ul class="play-list">
+        <li>随机分 3 队，各 5 人，接力传送气球</li>
+        <li>第 1 棒：两人三足，将气球运到对岸</li>
+        <li>第 2–4 棒：倒立套筒，将气球运送往返接力</li>
+        <li>运输中不能碰球，掉落回到起点</li>
+      </ul>
+      <div class="section-label">🪙 奖励</div>
+      <div class="reward"><span class="coin">🪙</span> 按快慢：第 1 名 5 币/人、第 2 名 3 币/人、第 3 名 1 币/人</div>
+      <div class="section-label">🎒 物品清单</div>
+      <div class="items"><span class="chip">气球 ×3</span><span class="chip">绑带 / 扎带</span><span class="chip">套筒 ×6</span></div>
+    </div>
+
+    <!-- 园区寻宝 -->
+    <div class="activity">
+      <span class="time-badge">16:50 – 17:20</span>
+      <div class="activity-head">
+        <span class="activity-title">🗺️ 园区寻宝</span>
+        <span class="tag lav">团队赛 / 小孩</span>
+      </div>
+      <div class="section-label">🎈 玩法</div>
+      <ul class="play-list">
+        <li>随机分 4 队，在园区内寻找地图碎片</li>
+        <li>先拼出完整藏宝图者胜</li>
+        <li>按完成顺序，每人分别奖励 5 / 3 / 2 / 1 币</li>
+      </ul>
+      <div class="section-label">🪙 奖励</div>
+      <div class="reward"><span class="coin">🪙</span> 按完成顺序：5 / 3 / 2 / 1 币/人</div>
+      <div class="section-label">🎒 物品清单</div>
+      <div class="items"><span class="chip">地图碎片拼图（提前藏园区）</span><span class="chip">藏宝图信封</span></div>
+    </div>
+
+    <!-- 博饼 -->
+    <div class="activity">
+      <span class="time-badge">17:20 – 17:50</span>
+      <div class="activity-head">
+        <span class="activity-title">🥮 博饼</span>
+        <span class="tag gold">终极环节</span>
+      </div>
+      <div class="section-label">🎈 玩法</div>
+      <ul class="play-list">
+        <li>凭累计游戏币兑换博饼次数</li>
+        <li>最少 5 次，封顶 10 次</li>
+        <li>游戏币最多者额外奖励 3 次</li>
+        <li>寿星额外奖励 5 次</li>
+      </ul>
+      <div class="section-label">🪙 奖励</div>
+      <div class="reward"><span class="coin">🪙</span> 游戏币兑换博饼次数（最少 5 次、封顶 10 次），博饼抽大奖 🎁</div>
+      <div class="section-label">🎒 物品清单</div>
+      <div class="items"><span class="chip">博饼套装（骰子 + 瓷碗）</span><span class="chip">奖品玩具</span><span class="chip">袋子</span></div>
+    </div>
+
+    <!-- 晚餐 -->
+    <div class="activity">
+      <span class="time-badge">17:50 – 18:50</span>
+      <div class="activity-head">
+        <span class="activity-title">🍕 晚餐</span>
+        <span class="tag">休息 / 全员</span>
+      </div>
+      <div class="section-label">🎈 玩法</div>
+      <ul class="play-list">
+        <li>集中点餐，披萨炸鸡外卖（不开火）</li>
+      </ul>
+      <div class="section-label">🎒 物品清单</div>
+      <div class="items"><span class="chip">外卖餐食</span><span class="chip">一次性餐具</span><span class="chip">饮料</span></div>
+    </div>
+
+    <!-- 天黑请闭眼 -->
+    <div class="activity">
+      <span class="time-badge">18:50 – 20:00</span>
+      <div class="activity-head">
+        <span class="activity-title">🌙 天黑请闭眼</span>
+        <span class="tag">桌游 / 全员</span>
+      </div>
+      <div class="section-label">🎈 玩法</div>
+      <ul class="play-list">
+        <li>全员上场，约 1 小时 2–3 局</li>
+        <li>节奏轻快不拖沓</li>
+      </ul>
+      <div class="section-label">🎒 物品清单</div>
+      <div class="items"><span class="chip">狼人杀卡牌</span></div>
+    </div>
+
+    <!-- 公主请许愿 -->
+    <div class="activity">
+      <span class="time-badge">20:00 – 20:30</span>
+      <div class="activity-head">
+        <span class="activity-title">👑 公主请许愿</span>
+        <span class="tag gold">吃蛋糕 / 全员</span>
+      </div>
+      <div class="section-label">🎈 玩法</div>
+      <ul class="play-list">
+        <li>关灯、拉炮、点蜡烛、许愿</li>
+        <li>切蛋糕、拆礼物、全家福</li>
+      </ul>
+      <div class="section-label">🎒 物品清单</div>
+      <div class="items"><span class="chip">生日蛋糕</span><span class="chip">数字蜡烛</span><span class="chip">蓝牙音箱</span></div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    念念的生日派对 🎀 愿你被这个世界温柔以待 <span class="heart">♥</span>
+  </div>
+
+  <script>
+    if (/MicroMessenger/i.test(navigator.userAgent)) {
+      var b = document.createElement('div');
+      b.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:9999;background:#FF9EC4;color:#fff;font-size:14px;text-align:center;padding:10px 14px;line-height:1.5;box-shadow:0 2px 8px rgba(0,0,0,.15)';
+      b.innerHTML = '如页面无法打开，请点右上角 ··· ，选择「在浏览器打开」即可查看 👉';
+      document.body.appendChild(b);
+    }
+  </script>
+
+</body>
+</html>
